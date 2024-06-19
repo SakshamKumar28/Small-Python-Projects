@@ -20,7 +20,7 @@ def secret_code_converter(string):
         #creating list of new string (s1) and the first letter of main string
         list = [s1, string[0]]
         #creating a new list by adding created lists
-        final_list = list_of_random_characters + list
+        final_list = list_of_random_characters + list + list_of_random_characters
         return "".join(final_list)
 
 
@@ -30,4 +30,4 @@ def secret_code_converter(string):
 a = input("Enter String: ")
 #using function
 res = secret_code_converter(a)
-print(res)
+print("String After Converting into code: ",res)
